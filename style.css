@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+:root{
+    --bg-color: #F6F5F5;
+    --main-color: #033a80;
+    --text-color: #0f0c27;
+    --hover:#F99417;
+    
+    --big-font: 2.02rem;
+    --medium-font: 1rem;
+    --p-font: 0.6rem;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+.navbar{
+    width: 100%;
+    padding: 0rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--main-color);
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    background-color: var(--bg-color);
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    
+}
+
+.list_menu a{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #979797;
+    margin: 0px 25px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.list_menu a:hover{
+    color: var(--text-color);
+}
+
+.button button{
+    background-color: #F9D949;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 25px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button button:hover{
+    background-color: #5aa1ff;
+}
+/* end navbar */
+
+/* main */
+.main{
+    background-color: var(--main-color);
+    padding: 100px 10px 80px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 550px;
+}
+
+.main-left h2{
+    color: var(--bg-color);
+    font-size: var(--big-font);
+}
+
+.main-left p{
+    color: var(--bg-color);
+    width: 280px;
+    font-weight: 200;
+}
+
+.main-left button{
+    background-color: #F9D949;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 25px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.main-left button:hover{
+    background-color: #5aa1ff;
+}
+
+.main-right img{
+    width: 800px;
+    height: 350px;
+    border-radius: 10px;
+}
+/* end main */
+
+/* kegiatan */
+.kegiatan{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kegiatan h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: var(--big-font);
+    color: var(--text-color);
+}
+
+.container-kegiatan{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.card-kegiatan{
+    width: 180px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+.card-kegiatan img{
+    border-radius: 20px;
+    background-color: #0f0c27;
+    width: 120px;
+    height: 140px;
+}
+.card-kegiatan button{
+    background-color: #F9D949;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 25px;
+    font-size: 10px;
+}
+
+.swiper {
+  width: 100%;
+  height: 60%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+
+
+
