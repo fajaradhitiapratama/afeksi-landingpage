@@ -14,9 +14,9 @@
     --text-color: #0f0c27;
     --hover:#F99417;
     
-    --big-font: 2.02rem;
-    --medium-font: 1rem;
-    --p-font: 0.6rem;
+    --big-font: 3.02rem;
+    --medium-font: 1.5rem;
+    --p-font: 0.8rem;
 }
 
 html,
@@ -52,7 +52,7 @@ body {
 }
 
 .list_menu a{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: lighter;
     color: #979797;
     margin: 0px 25px;
@@ -68,8 +68,8 @@ body {
     background-color: #F9D949;
     border: none;
     border-radius: 5px;
-    padding: 6px 25px;
-    font-size: 10px;
+    padding: 6px 45px;
+    font-size: 15px;
     cursor: pointer;
     transition: .3s;
 }
@@ -82,7 +82,7 @@ body {
 /* main */
 .main{
     background-color: var(--main-color);
-    padding: 100px 10px 80px 10px;
+    padding: 160px 10px 90px 10px;
     display: flex;
     justify-content: space-around;
 }
@@ -90,7 +90,7 @@ body {
 .main-left{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: baseline;
     width: 550px;
 }
@@ -102,6 +102,7 @@ body {
 
 .main-left p{
     color: var(--bg-color);
+    font-size: var(--medium-font);
     width: 280px;
     font-weight: 200;
 }
@@ -111,19 +112,20 @@ body {
     border: none;
     border-radius: 5px;
     padding: 6px 25px;
-    font-size: 10px;
+    font-size: 15px;
     cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
     transition: .3s;
 }
 
 .main-left button:hover{
-    background-color: #5aa1ff;
+    background-color: #ffffff;
 }
 
 .main-right img{
     width: 800px;
-    height: 350px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 /* end main */
 
@@ -133,26 +135,28 @@ body {
     width: auto;
     flex-direction: column;
     align-items: center;
+    /* background-image: url(assets/bg.jpg);
+    object-fit: fill; */
 }
 
 .kegiatan h1{
     text-align: center;
-    margin-top: 25px;
+    margin-top: 55px;
     margin-bottom: 20px;
     font-size: var(--big-font);
     color: var(--text-color);
 }
 
 .container-kegiatan{
-    width: 800px;
+    width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
 }
 .card-kegiatan{
-    width: 180px;
-    height: 250px;
+    width: 380px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,18 +166,58 @@ body {
     padding: 10px;
 }
 .card-kegiatan img{
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #0f0c27;
-    width: 120px;
-    height: 140px;
+    width: 280px;
+    height: 340px;
 }
 .card-kegiatan button{
     background-color: #F9D949;
     border: none;
     border-radius: 5px;
     padding: 6px 25px;
-    font-size: 10px;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: .3s;
 }
+
+.card-kegiatan button:hover{
+    background-color: #fff;
+}
+/* end kegiatan */
+
+/* langkah */
+.langkah{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.langkah h1{
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    font-size: var(--big-font);
+    color: var(--text-color);
+}
+
+.container-langkah{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-langkah{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   row-gap: 20px;
+}
+.card-langkah img{
+    width: 200px;
+    height: 200px;
+}
+
 
 .swiper {
   width: 100%;
