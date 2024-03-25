@@ -63,7 +63,7 @@ body {
   color: var(--text-color);
 }
 
-.button button {
+.navbar button {
   background-color: #f9d949;
   border: none;
   border-radius: 5px;
@@ -73,8 +73,9 @@ body {
   transition: 0.3s;
 }
 
-.button button:hover {
-  background-color: #5aa1ff;
+.navbar button:hover {
+  background-color: var(--main-color);
+  color: var(--bg-color);
 }
 /* end navbar */
 
@@ -380,27 +381,188 @@ section .card .image img {
 /* end swiper */
 
 /* layanan */
-.layanan{
-    background-color: var(--main-color);
+.layanan {
+  background-color: var(--main-color);
 }
 .layanan h1 {
   font-size: var(--big-font);
   color: var(--bg-color);
   text-align: center;
-  padding: 0 200px;
+  padding: 40px 200px;
   margin-top: 120px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
-.container-layanan{
-    display: flex;
-    justify-content: center;
-    
+.container-layanan {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 50px;
 }
 
-.card-layanan{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.card-layanan {
+  border-radius: 15px;
+  padding: 5px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-layanan img {
+  width: 200px;
+  padding-top: 40px;
+}
+
+.card-layanan button{
+  color: var(--bg-color);
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  padding: 6px 25px;
+  font-size: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card-layanan button:hover{
+  background-color: var(--hover);
+  color: var(--text-color);
+}
+/* end layanan */
+.name-profession p {
+  font-size: 15;
+  text-align: center;
+  padding-top: 25px;
+  color: var(--text-color);
+}
+/* testimoni */
+.sponsor{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color);
+}
+.sponsor h1{
+  color: var(--bg-color);
+  font-size: var(--big-font);
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.container-sponsor{
+  gap: 50px;
+  display: flex;
+  padding-bottom: 10px;
+}
+.container-sponsor img{
+  border-radius: 5px;
+  width: 180px;
+  height: 100px;
+  background-color: var(--bg-color);
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  background-color: var(--main-color);
+  padding-bottom: 10px;
+}
+
+.card-footer{
+  position: absolute;
+  top: 3920px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  border-radius: 5px;
+}
+.card-footer h3{
+  font-size: var(--medium-font);
+  width: 300px;
+}
+.card-footer button{
+  background: var(--hover);
+  outline: none;
+  border: none;
+  color: var(--text-color);
+  padding: 8px 22px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card-footer button:hover{
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.info{
+  width: 1100px;
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-penting{
+  background-color: #fff;
+  width: 450px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.card-penting .alamat{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.card-penting .alamat img{
+  width: 80px;
+}
+.contact{
+  font-size: var(--p-font);
+}
+
+.deskripsi{
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.social-media{
+  font-size: 40px;
+  display: flex;
+  gap: 20px;
+}
+.social-media i{
+  cursor: pointer;
+  transition: .3s;
+}
+
+.social-media i:hover{
+  color: var(--hover);
+}
+
+.menu-layanan h4,
+.menu-tentangkami h4,
+.menu-lainnya h4{
+  font-size: var(--medium-font);
+  color: var(--bg-color);
+}
+.menu-layanan a,
+.menu-tentangkami a,
+.menu-lainnya a{
+  margin:0 10px;
+  font-size: var(--p-font);
+  color: var(--bg-color);
 }
