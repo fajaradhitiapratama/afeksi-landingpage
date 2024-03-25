@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   </head>
   <body>
     <div class="navbar">
@@ -17,7 +18,7 @@
         <img src="assets/image.png" alt="logo" />
       </div>
       <div class="list_menu">
-        <a href="#" id="beranda" style="color: #000;">Beranda</a>
+        <a href="#" id="beranda" style="color: #000">Beranda</a>
         <a href="#" id="kegiatan">Kegiatan</a>
         <a href="#" id="layanan">Layanan</a>
         <a href="#" id="tentangkami">Tentang Kami</a>
@@ -63,54 +64,268 @@
         <div class="card-langkah">
           <h4>1</h4>
           <img src="assets/k1.png" alt="" />
-          <p>Pilih Paket</p>
-          <p>Pilihan paket yang Anda inginkan</p>
+          <button>Pilih Paket</button>
+          <p>Pilihan paket yang Anda inginkan.</p>
         </div>
         <div class="card-langkah">
           <h4>2</h4>
           <img src="assets/k2.png" alt="" />
-          <p>Pilih Prikolog</p>
-          <p>Pilihan psikolog sesuai dengan masalah yang Anda hadapi</p>
+          <button>Pilih Psikolog</button>
+          <div class="info-langkah">
+            <p>Pilihan psikolog sesuai dengan masalah yang Anda hadapi.</p>
+          </div>
         </div>
         <div class="card-langkah">
           <h4>3</h4>
           <img src="assets/k3.png" alt="" />
-          <p>Isi isdenstitas & Mengatur Jadwal</p>
-          <p>Isilah identitas dan atur jadwal konsultasi</p>
+          <button>Isi idenstitas & Mengatur Jadwal</button>
+          <p>Isilah identitas dan atur jadwal konsultasi.</p>
         </div>
         <div class="card-langkah">
           <h4>4</h4>
           <img src="assets/k4.png" alt="" />
-          <p>Pembayaran</p>
-          <p>lakukan pembayaran untuk bisa mengikuti konseling</p>
+          <button>Pembayaran</button>
+          <p>Lakukan pembayaran untuk bisa mengikuti konseling.</p>
         </div>
       </div>
     </div>
-
-    <div class="swiper mySwiper profil">
-      <h1>Profil psikolog</h1>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="assets/1.jpg" alt="" /></div>
-        <div class="swiper-slide"><img src="assets/2.jpg" alt="" /></div>
-        <div class="swiper-slide"><img src="assets/3.jpg" alt="" /></div>
-        <div class="swiper-slide"><img src="assets/4.jpg" alt="" /></div>
-        <div class="swiper-slide"><img src="assets/5.jpg" alt="" /></div>
-        <div class="swiper-slide"><img src="assets/6.jpg" alt="" /></div>
-        <div class="swiper-slide"><img src="assets/7.jpg" alt="" /></div>
-        <div class="swiper-slide"><img src="assets/8.jpg" alt="" /></div>
+    <!-- swiper js -->
+    <section>
+      <h1>Profil Psikolog</h1>
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper content">
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="assets/1.jpg" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web Developer</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="assets/2.jpg" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web Developer</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="assets/3.jpg" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web Developer</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="assets/4.jpg" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web Developer</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="assets/5.jpg" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web Developer</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="assets/6.jpg" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web Developer</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="assets/7.jpg" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web Developer</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="assets/8.jpg" alt="" />
+              </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="name-profession">
+                <span class="name">Someone Name</span>
+                <span class="profession">Web Developer</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
-    </div>
-
+    </section>
+    <!-- end swiper js -->
     <div class="layanan">
-      <h2>Pilih layanan konsultasi yang membuatmu nyaman dan tenang</h2>
+      <h1>Pilih Layanan Konsultasi Yang Membuatmu Nyaman dan Tenang</h1>
       <div class="container-layanan">
         <div class="card-layanan">
-          <img src="" alt="" />
+          <img src="assets/l1.png" alt="" />
           <button class="btn">Mentoring</button>
         </div>
         <div class="card-layanan">
-          <img src="" alt="" />
+          <img src="assets/l2.png" alt="" />
           <button class="btn">Konseling</button>
         </div>
       </div>
@@ -170,24 +385,27 @@
       </div>
       <div class="info">
         <div class="card-penting">
-            <div class="alamat">
-                <img src="assets/image.png" alt="">
-                <div class="contact">
-                    <p>Jl. Gubeng Jaya IX no.1 Surabaya, Indonesia</p>
-                    <p>Contact: +6282142625552</p>
-                    <p>Email: afeksidn@gmail.com</p>
-                </div>   
+          <div class="alamat">
+            <img src="assets/image.png" alt="" />
+            <div class="contact">
+              <p>Jl. Gubeng Jaya IX no.1 Surabaya, Indonesia</p>
+              <p>Contact: +6282142625552</p>
+              <p>Email: afeksidn@gmail.com</p>
             </div>
-            <div class="deskripsi">
-                <p>Afeksi merupakan Platform layanan edukasi dan konsultasi kesehatan hubungan berbasis psikologi relasi pertama di Indonesia.</p>
-            </div>
-            <div class="social-media">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-tiktok"></i>
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
+          </div>
+          <div class="deskripsi">
+            <p>
+              Afeksi merupakan Platform layanan edukasi dan konsultasi kesehatan
+              hubungan berbasis psikologi relasi pertama di Indonesia.
+            </p>
+          </div>
+          <div class="social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
         </div>
         <div class="menu-layanan">
           <a href="">
@@ -228,7 +446,10 @@
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Icon Fontawesome -->
-    <script src="https://kit.fontawesome.com/ff4f981f32.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ff4f981f32.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Script JS -->
     <script src="script.js"></script>
   </body>
